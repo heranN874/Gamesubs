@@ -1,4 +1,4 @@
-const CACHE="gamesubs-shell-v1";
+const CACHE="gamesubs-shell-v2";
 const RUNTIME="gamesubs-runtime-v1";
 const SHELL=["./","./index.html","./manifest.webmanifest","./app.js"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL))));

@@ -29,7 +29,7 @@ async function loadModels(){
     });
     $("progress").value = 65;
     // Marian English -> Turkish translation model.
-    translator = await pipeline("translation","Xenova/opus-mt-en-tr");
+    translator = await pipeline("translation",onnx-community/opus-mt-tc-big-en-tr);
     $("progress").value = 100;
     $("modelState").textContent = "Hazır";
     $("modelInfo").textContent = "Modeller yüklendi. Tarayıcı önbelleğinde tutulmaları beklenir; iOS depolama temizliği bunları silebilir.";
